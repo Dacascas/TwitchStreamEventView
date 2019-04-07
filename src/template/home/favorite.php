@@ -1,0 +1,12 @@
+<?php
+echo '<html>
+        <head></head>
+        <body style="text-align:center;margin: 0 auto;display: block;">
+            <p>' . $message . '</p>
+            <button style="background-color: #6441a5;  padding:10px;">
+                <form method="post">
+                    <input type="text" name="streamer-name"/>
+                    <input class="favorite styled" type="submit" name="fav" value="Add to favorites">
+                </form>
+            </button></body>
+      </html>';
