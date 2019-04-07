@@ -1,0 +1,36 @@
+{
+  "name": "stream-event-viewer",
+  "description": "Stream event viewer for Twitch",
+  "minimum-stability":"dev",
+  "prefer-stable": true,
+  "authors": [
+    {
+      "name": "Taras Kostyuk",
+      "email": "x_casper@ukr.net"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "slim/slim": "^3.0",
+    "monolog/monolog": "^1.23",
+    "slim/php-view": "^2.0",
+    "guzzlehttp/guzzle": "~6.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.5",
+    "squizlabs/php_codesniffer": "^3.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Stream\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Stream\\Test\\": "tests/"
+    }
+  },
+  "config": {
+    "bin-dir": "bin"
+  }
+}
