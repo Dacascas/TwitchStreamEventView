@@ -1,6 +1,6 @@
 # Twitch Stream Event Viewer
 
-Live DEMO: [LIVE website](https://shielded-temple-18336.herokuapp.com/#/login)
+Live DEMO: [LIVE website](https://tranquil-lowlands-72927.herokuapp.com/home)
 
 This repo is an application which exposes two simple pages to the browser
 - The first/home page lets a user login with Twitch and set their favorite Twitch streamer name. This initiates a backend event listener which listens to all events for given streamer.
