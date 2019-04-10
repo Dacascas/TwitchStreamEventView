@@ -1,6 +1,6 @@
 <?php
 
-error_reporting(E_ALL);
+var_dump($_SERVER);
 
 require 'vendor/autoload.php';
 
