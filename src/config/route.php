@@ -5,5 +5,5 @@ $app->get('/auth', 'auth.controller:indexAction');
 $app->get('/auth/redirect', 'auth.controller:redirectAction');
 $app->get('/home', 'home.controller:indexAction')->add('refresh.service:checkToken');
 $app->post('/home', 'home.controller:indexAction')->add('refresh.service:checkToken');
-$app->get('/streamer', 'home.controller:listFavoriteAction')->add('refresh.service:checkToken');
-$app->get('/streamer/{id}', 'home.controller:getFavoriteAction')->add('refresh.service:checkToken');
+$app->get('/streamer', 'stream.controller:listFavoriteAction')->add('refresh.service:checkToken');
+$app->get('/streamer/{id}', 'stream.controller:getFavoriteAction')->add('refresh.service:checkToken');
