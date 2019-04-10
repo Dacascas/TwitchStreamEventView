@@ -61,18 +61,23 @@ class HomeController
             }
         }
         
-        return $this->renderer->render($response, 'home/favorite.php', ['message' => $message]);
+        return $this->renderer->render(
+            $response,
+            'home/favorite.php',
+            [
+                'message' => $message,
+                'list'    => $this->getFavoriteAction($request)
+            ]
+        );
     }
     
     /**
      * @param Request $request
-     * @param Response $response
      * @return Response
      */
-    public function getFavoriteAction(Request $request, Response $response)
+    private function getFavoriteAction(Request $request)
     {
-        return $this->renderer->render(
-            $response,
+        return $this->renderer->fetch(
             'home/list.php',
             [
                 'list' => $this->twitchService->getListFollowUser($request->getCookieParams()['user_id'])
