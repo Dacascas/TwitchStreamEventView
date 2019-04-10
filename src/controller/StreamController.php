@@ -35,8 +35,25 @@ class StreamController
      * @param Response $response
      * @return Response
      */
+    public function listFavoriteAction(Request $request, Response $response)
+    {
+        return $this->renderer->render(
+            $response,
+            'home/list.php',
+            [
+                'list' => $this->twitchService->getListFollowUser($request->getCookieParams()['user_id'])
+            ]
+        );
+    }
+    
+    /**
+     * @param Request $request
+     * @param Response $response
+     * @return Response
+     */
     public function getFavoriteAction(Request $request, Response $response)
     {
+        echo $request->getQueryParams('id');
         return $this->renderer->render(
             $response,
             'home/list.php',
