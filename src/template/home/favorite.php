@@ -8,5 +8,7 @@ echo '<html>
                     <input type="text" name="streamer-name"/>
                     <input class="favorite styled" type="submit" name="fav" value="Add to favorites">
                 </form>
-            </button></body>
+            </button>
+            ' . $list .'
+        </body>
       </html>';
