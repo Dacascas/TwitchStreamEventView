@@ -1,7 +1,5 @@
 <?php
 
-var_dump($_SERVER);
-
 require '../vendor/autoload.php';
 
 $config = require_once '../src/config/config.php';
