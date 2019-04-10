@@ -17,10 +17,10 @@ $c['lib.http_client'] = function () {
     return new \GuzzleHttp\Client();
 };
 $c['refresh.service'] = function () use ($c, $config) {
-    return new \Stream\Service\RefreshService($c['lib.http_client'], $config['twitch.options']);
+    return new \Stream\service\RefreshService($c['lib.http_client'], $config['twitch.options']);
 };
 $c['twitch.service'] = function () use ($c, $config) {
-    return new \Stream\Service\TwitchService($c['lib.http_client'], $config['twitch.options']['client_id']);
+    return new \Stream\service\TwitchService($c['lib.http_client'], $config['twitch.options']['client_id']);
 };
 
 $c['renderer'] = new \Slim\Views\PhpRenderer(__DIR__ . '/../../src/template');
