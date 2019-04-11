@@ -6,6 +6,24 @@ echo <<<HERE
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
+    <header>
+        <nav class="navbar bg-primary navbar-dark navbar-expand-sm">
+            <div class="container">
+                <a class="navbar-brand" href="#">Streamer Viewer</a>
+            </div>
+        </nav>
+    </header>
+    <section class="section section-shaped section-lg mt-10">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-sm">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <div id="twitch-embed" class="embed-responsive-item"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Load the Twitch embed script -->
     <script src="https://embed.twitch.tv/embed/v1.js"></script>
 
@@ -25,24 +43,6 @@ echo <<<HERE
         player.play();
       });
     </script>
-    <header>
-        <nav class="navbar bg-primary navbar-dark navbar-expand-sm">
-            <div class="container">
-                <a class="navbar-brand" href="#">Streamer Viewer</a>
-            </div>
-        </nav>
-    </header>
-    <section class="section section-shaped section-lg mt-10">
-        <div class="container">
-            <div class="row mb-3">
-                <div class="col-sm">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <div id="twitch-embed" class="embed-responsive-item"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
   </body>
 </html>
 HERE;
