@@ -8,7 +8,7 @@ This repo is an application which exposes two simple pages to the browser
 
 ## Technologies used:
 
-- Slim : Microframework for managing application state which cant be exposed to clients
+- [Slim](http://www.slimframework.com/) : Microframework for managing application state which cant be exposed to clients
 - [Bootstrap](https://getbootstrap.com/docs) : Frontend styling
 - 3rd Party APIs: [Twitch](https://dev.twitch.tv/docs/)
 - [LIVE website](https://tranquil-lowlands-72927.herokuapp.com) Deployment done over Heroku.
