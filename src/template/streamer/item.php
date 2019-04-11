@@ -26,7 +26,7 @@ echo <<<HERE
       });
     </script>
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <nav class="navbar bg-primary navbar-dark navbar-expand-sm">
             <div class="container">
                 <a class="navbar-brand" href="#">Streamer Event Viewer</a>
             </div>
