@@ -62,19 +62,22 @@ class TwitchService
      */
     public function getUserByName(string $name): array
     {
-        $response = $this->client->get($this->krakenUri .'users?login=' . $name, [
-                'headers' => [
-                    'Client-ID' => $this->client_id,
-                    'Accept'    => 'application/vnd.twitchtv.v5+json'
-                ]]
-        );
-        
-        if ($response->getStatusCode() == 200) {
-            $result = \json_decode($response->getBody()->getContents(), true);
+        try {
+            $response = $this->client->get($this->krakenUri .'users?login=' . $name, [
+                    'headers' => [
+                        'Client-ID' => $this->client_id,
+                        'Accept'    => 'application/vnd.twitchtv.v5+json'
+                    ]]
+            );
             
-            if ($result['_total'] > 0) {
-                return $result['users'][0];
+            if ($response->getStatusCode() == 200) {
+                $result = \json_decode($response->getBody()->getContents(), true);
+                
+                if ($result['_total'] > 0) {
+                    return $result['users'][0];
+                }
             }
+        } catch (\Throwable $e) {
         }
         
         return [];
