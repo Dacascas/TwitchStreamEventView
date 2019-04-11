@@ -28,7 +28,7 @@ echo <<<HERE
     <header>
         <nav class="navbar bg-primary navbar-dark navbar-expand-sm">
             <div class="container">
-                <a class="navbar-brand" href="#">Streamer Event Viewer</a>
+                <a class="navbar-brand" href="#">Streamer Viewer</a>
             </div>
         </nav>
     </header>
