@@ -86,7 +86,7 @@ class TwitchService
      * @param string $token
      * @return bool
      */
-    public function addFollowUser(string $followerId, string $followedId, string $token): bool
+    public function addFollowUser(?string $followerId, ?string $followedId, string $token): bool
     {
         try {
             $this->client->put(
