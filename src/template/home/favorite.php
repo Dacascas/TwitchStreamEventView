@@ -4,7 +4,7 @@ echo <<<HERE
   <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
-  <body style="padding-left:40%;">
+  <body>
     <header>
         <nav class="navbar bg-primary navbar-dark navbar-expand-sm" style="background-color:#6441a4 !important;">
             <div class="container">
@@ -15,7 +15,7 @@ echo <<<HERE
     <section class="section section-shaped section-lg mt-10">
     <div class="container">
         <div class="row mb-3">
-           <div class="col-sm">
+           <div class="px-auto">
             <p>$message</p>
             <button style="background-color: #6441a5;  padding:10px; position: absolute; top: 50%;">
                 <form method="post">
