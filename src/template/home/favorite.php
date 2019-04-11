@@ -15,8 +15,8 @@ echo <<<HERE
     <section class="section section-shaped section-lg mt-10">
     <div class="container">
         <div class="row mb-3">
-           <div class="col-sm-3"></div>
-           <div class="col-sm-9">
+           <div class="col-sm-4 col-md-4"></div>
+           <div class="col-sm-8 col-md-8">
             <p>$message</p>
             <button style="background-color: #6441a5;  padding:10px; position: absolute; top: 50%;">
                 <form method="post">
