@@ -11,10 +11,17 @@ echo <<<HERE
 
     <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
     <script type="text/javascript">
-      new Twitch.Embed("twitch-embed", {
+      var embed = new Twitch.Embed("twitch-embed", {
         width: 854,
         height: 480,
-        channel: "$name"
+        channel: "$name",
+        layout: "video",
+        autoplay: false
+      });
+
+      embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
+        var player = embed.getPlayer();
+        player.play();
       });
     </script>
   </body>
