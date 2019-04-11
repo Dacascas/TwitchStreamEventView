@@ -51,9 +51,10 @@ class StreamerController
      * @param Response $response
      * @return Response
      */
-    public function getFavoriteAction(Request $request, Response $response)
+    public function getFavoriteAction(Request $request, Response $response, $args)
     {
-        var_dump($request->getBody()->getContents());
+        var_dump($args);
+        var_dump($request->getAttributes());
         return $this->renderer->render(
             $response,
             'streamer/item.php',
