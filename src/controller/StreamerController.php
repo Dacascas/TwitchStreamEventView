@@ -57,7 +57,7 @@ class StreamerController
             $response,
             'streamer/item.php',
             [
-                'name' => $request->getQueryParams('name')
+                'channelName' => $request->getQueryParams('name')
             ]
         );
     }
