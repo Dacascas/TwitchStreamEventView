@@ -32,7 +32,6 @@ echo <<<HERE
     <div class="container">
         <div class="row mb-3">
            <div class="col-sm">
-            <p>$message</p>
             $list
             </div>
         </div>
