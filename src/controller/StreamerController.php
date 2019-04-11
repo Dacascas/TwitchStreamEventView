@@ -7,7 +7,7 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\Views\PhpRenderer;
 use Stream\service\TwitchService;
 
-class StreamController
+class StreamerController
 {
     /**
      * @var PhpRenderer
@@ -53,12 +53,11 @@ class StreamController
      */
     public function getFavoriteAction(Request $request, Response $response)
     {
-        echo $request->getQueryParams('id');
         return $this->renderer->render(
             $response,
-            'home/list.php',
+            'streamer/item.php',
             [
-                'list' => $this->twitchService->getListFollowUser($request->getCookieParams()['user_id'])
+                'name' => $request->getQueryParams('name')
             ]
         );
     }
