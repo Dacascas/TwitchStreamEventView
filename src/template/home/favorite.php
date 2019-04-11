@@ -29,7 +29,7 @@ echo <<<HERE
     <div class="container">
         <div class="row mb-3">
            <div class="col-sm-4 col-md-4"></div>
-           <div class="col-sm-8 col-md-8">$list</div>
+           <div class="col-sm-3 col-md-3">$list</div>
         </div>
     </div>
   </body>
