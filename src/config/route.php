@@ -1,6 +1,9 @@
 <?php
 
 $app->get('/ping', 'ping.controller:indexAction');
+$app->get('/', function ($request, $response, $args) {
+    return $response->withRedirect('home');
+});
 $app->get('/auth', 'auth.controller:indexAction');
 $app->get('/auth/redirect', 'auth.controller:redirectAction');
 $app->get('/home', 'home.controller:indexAction')->add('refresh.service:checkToken');
