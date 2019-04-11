@@ -15,7 +15,7 @@ echo <<<HERE
     <div class="container">
         <div class="row mb-3">
            <div class="col-sm-4 col-md-4"></div>
-           <div class="col-sm-8 col-md-8 style="min-height:150px;">
+           <div class="col-sm-8 col-md-8" style="min-height:150px;">
             <p>$message</p>
             <button style="background-color: #6441a5;  padding:10px; position: absolute; top: 50%;">
                 <form method="post">
