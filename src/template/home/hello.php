@@ -24,6 +24,13 @@ echo <<<HERE
             </div>
         </div>
     </div>
+    <footer class="page-footer font-small blue pt-4">
+        <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+      <a href="https://github.com/Dacascas"> Taras Kostiuk</a>
+    </div>
+    <!-- Copyright -->
+    </footer>
   </body>
 </html>
 HERE;
