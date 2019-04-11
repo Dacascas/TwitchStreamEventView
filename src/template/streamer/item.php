@@ -7,7 +7,7 @@ echo <<<HERE
   </head>
   <body>
     <header>
-        <nav class="navbar bg-primary navbar-dark navbar-expand-sm" style="background-color:#6441a4">
+        <nav class="navbar bg-primary navbar-dark navbar-expand-sm" style="background-color:#6441a4 !important;">
             <div class="container">
                 <a class="navbar-brand" href="#">Streamer Viewer</a>
             </div>
